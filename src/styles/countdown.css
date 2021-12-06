@@ -76,6 +76,7 @@ p {
     width: 20%;
   } 
   .flip-card {
+    perspective: 150px;
     height: 130px;
   }
   .digit {

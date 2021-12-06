@@ -40,10 +40,6 @@ a:hover {
 
 /* //////////////////////RESPONSIVE//////////////////////// */
 
-@media screen and (max-width: 992px) {
-  
-}
-
 @media screen and (max-width: 576px) {
   .title {
     font-size: 1.2rem;
