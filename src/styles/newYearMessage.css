@@ -1,0 +1,18 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+}
+.message {
+  font-size: 10rem;
+  color: #fb6087;
+  font-family: 'Cookie', cursive;
+}

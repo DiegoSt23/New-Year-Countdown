@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/main-container.css";
+
+// Components
+import Countdown from "./components/Countdown";
+
+// Icons
+import { AiFillLinkedin, AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
 function App() {
+  const nextYear = new Date().getFullYear() + 1;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className="main-container">
+      <div className="counter-container">
+        <h1 className="title">
+          REMAINING TO {nextYear}
+        </h1>
+        <Countdown />
+      </div>
+      <div className="links-container">
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/diego-%C3%A1lvarez-garc%C3%ADa/"
+          target="blank"
         >
-          Learn React
+          <AiFillLinkedin className="icon" />
         </a>
-      </header>
+        <a href="https://github.com/DiegoSt23" target="blank">
+          <AiFillGithub />
+        </a>
+        <a href="https://portfolio-diego-alvarez.vercel.app/" target="blank">
+          <AiOutlineLink />
+        </a>
+      </div>
     </div>
   );
 }

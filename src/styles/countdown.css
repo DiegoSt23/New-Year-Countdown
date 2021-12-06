@@ -1,0 +1,99 @@
+.counter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.card {
+  width: 10%;
+  margin: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flip-card {
+  width: 100%;
+  height: 150px;
+  perspective: 400px;
+  background-color: #343650;
+  border-radius: 10px;
+  box-shadow: 0px 15px 0px 0px #191a24;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flipcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+} 
+.middle-line {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  border-top: 2px solid #232430;
+  border-bottom: 2px solid #464969;
+  background-color: #232430;
+  z-index: 1;
+}
+.digit-container-1, .digit-container-2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #343650;  
+  pointer-events: none;
+}
+.digit-container-2 { 
+  transform: rotateX(180deg); 
+}
+.digit {
+  font-size: 4.5rem;
+  color: #fb6087; 
+  position: absolute;
+}
+p {
+  color: #8486a9;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* //////////////////////RESPONSIVE//////////////////////// */
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 15%;
+  } 
+}
+
+@media screen and (max-width: 680px) {
+  .card {
+    width: 20%;
+  } 
+  .flip-card {
+    height: 130px;
+  }
+  .digit {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    margin: 0px 5px;
+  }
+  .flip-card {
+    height: 80px;
+  }
+  .digit {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+}
